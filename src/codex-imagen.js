@@ -63,7 +63,7 @@ export function getCodexFallbackMessage(reason) {
   const summary = typeof reason === 'string' && reason.trim()
     ? reason.trim()
     : 'codex-imagen image generation failed.';
-  return `${summary} codex-imagen is the default image provider and reuses your local Codex ChatGPT login (~/.codex/auth.json). Run \`codex login\` once to enable it. Optional fallbacks: set OPENAI_API_KEY (OpenAI gpt-image-2) or GOOGLE_API_KEY/GEMINI_API_KEY (Nano Banana). If image generation credentials are unavailable, use web search and download the chosen image into ./assets/<file>.`;
+  return `${summary} codex-imagen is the default image provider and reuses your local Codex ChatGPT login (~/.codex/auth.json). Run \`codex login\` once to enable it. Optional fallbacks: set OPENAI_API_KEY (OpenAI gpt-image-2.6-flare) or GOOGLE_API_KEY/GEMINI_API_KEY (Nano Banana). If image generation credentials are unavailable, use web search and download the chosen image into ./assets/<file>.`;
 }
 
 const MIME_BY_EXTENSION = {

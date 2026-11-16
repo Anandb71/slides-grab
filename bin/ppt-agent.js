@@ -322,7 +322,7 @@ program
   .option('--name <slug>', 'Optional asset basename without extension')
   .option('--image-native', 'Also create an editor-compatible slide-XX.html wrapper and regeneration metadata; requires --name slide-XX')
   .option('--provider <name>', 'Image provider: codex (default), openai, or nano-banana. Aliases: codex-cli → codex, openai → openai, gemini → nano-banana')
-  .option('--model <id>', 'Model id (default: gpt-5.4 for codex, gpt-image-2 for openai, gemini-3-pro-image-preview for nano-banana)')
+  .option('--model <id>', 'Model id (default: gpt-5.4 for codex, gpt-image-2.6-flare for openai, gemini-3-pro-image-preview for nano-banana)')
   .option('--aspect-ratio <ratio>', 'Aspect ratio; for codex it is injected as a prompt hint, for openai it maps to the nearest supported OpenAI size (default: 16:9)')
   .option('--image-size <size>', 'Nano Banana image size preset: 2K or 4K (default: 4K)')
   .option('--base-url <url>', 'OpenAI-compatible base URL (default: OPENAI_IMAGE_BASE_URL, OPENAI_BASE_URL, then OpenAI)')

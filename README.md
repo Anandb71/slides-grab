@@ -201,7 +201,7 @@ The command saves the result into `<slides-dir>/assets/` and prints the portable
 
 Optional alternative providers via `--provider`:
 
-- `--provider openai`: OpenAI `gpt-image-2`. Requires `OPENAI_API_KEY`. Maps `--aspect-ratio` to the nearest supported OpenAI image size (`16:9` defaults to a landscape `1536x1024` request).
+- `--provider openai`: OpenAI `gpt-image-2.6-flare`. Requires `OPENAI_API_KEY`. Maps `--aspect-ratio` to the nearest supported OpenAI image size (`16:9` defaults to a landscape `1536x1024` request).
 - `--provider nano-banana` (alias `gemini`): Google `gemini-3-pro-image-preview`. Requires `GOOGLE_API_KEY` (or `GEMINI_API_KEY`). Supports `--image-size 2K|4K`.
 
 If the default codex-imagen call fails, slides-grab automatically falls back to whichever optional provider has credentials available; otherwise it asks you to fall back to web search + local download into `assets/`.
